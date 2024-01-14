@@ -1,0 +1,32 @@
+@import "../../App.scss";
+.footer {
+  .copyright-text {
+    display: block;
+    margin-top: 0.7rem;
+  }
+}
+
+.footer .container .link a {
+  position: relative;
+  text-decoration: none;
+  font-family: $font-family-manrope;
+  color: $clr-white;
+}
+
+.footer .container .link a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  background-color: $clr-light-gray;
+  bottom: -2px;
+  transition: 0.3s;
+}
+.footer .container .link a:hover::after {
+  width: 100%;
+}
+.footer .container .link a:hover {
+  color: white;
+  font-weight: 500;
+}

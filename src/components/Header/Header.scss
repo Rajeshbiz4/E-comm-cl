@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.header {
+  background: rgb(249, 78, 48);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 78, 48, 1) 0%,
+    rgba(255, 100, 51, 1) 100%
+  );
+
+  .header-cnt-top {
+    border-bottom: 1px solid lighten($clr-orange, 10%);
+  }
+
+  @media screen and (max-width: 992px) {
+    .header-cnt-top {
+      flex-direction: column;
+      .header-cnt-top-l {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+.header .header-cnt .header-cnt-top a {
+  position: relative;
+  text-decoration: none;
+  font-family: $font-family-manrope;
+  color: $clr-white;
+}
+
+.header .header-cnt .header-cnt-top a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  background-color: $clr-light-gray;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.header .header-cnt a:hover::after {
+  width: 100%;
+}
+
+.header .header-cnt .header-cnt-top a:hover {
+  color: white;
+  font-weight: 500;
+}
