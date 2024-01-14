@@ -25,16 +25,16 @@ const Navbar = () => {
   const categories = useSelector(getAllCategories);
   const carts = useSelector(getAllCarts);
   const itemsCount = useSelector(getCartItemsCount);
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [searchTerm, setSearchTerm] = useState("");
 
-  const handleSearchTerm = (e) => {
-    e.preventDefault();
-    setSearchTerm(e.target.value);
-  };
+  // const handleSearchTerm = (e) => {
+  //   e.preventDefault();
+  //   setSearchTerm(e.target.value);
+  // };
 
   useEffect(() => {
     dispatch(getCartTotal());
-  }, [carts]);
+  }, [carts, dispatch]);
 
   return (
     <nav className="navbar">

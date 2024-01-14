@@ -9,7 +9,6 @@ import {
   removeFromCart,
   toggleCartQty,
   clearCart,
-  getCartTotal,
 } from "../../store/cartSlice";
 const CartPage = () => {
   const dispatch = useDispatch();

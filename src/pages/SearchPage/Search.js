@@ -10,7 +10,6 @@ import {
   fetchAsyncSearchProduct,
   getSearchProducts,
   getSearchProductsStatus,
-  setSearchTerm,
 } from "../../store/searchSlice";
 const Search = () => {
   const dispatch = useDispatch();
