@@ -12,15 +12,15 @@ const Header = () => {
             <div className="header-cnt-top-r">
               <ul className="top-links flex align-center">
                 
-                <li className="vert-line"></li>
+                
                 <li>
-                  <Link to="/">
+                  <Link to="/register">
                     <span className="top-link-itm-txt">Register</span>
                   </Link>
                 </li>
                 <li className="vert-line"></li>
                 <li>
-                  <Link to="/">
+                  <Link to="/login">
                     <span className="top-link-itm-txt">Log in</span>
                   </Link>
                 </li>

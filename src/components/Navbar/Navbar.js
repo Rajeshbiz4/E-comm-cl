@@ -49,8 +49,8 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* <div className="navbar-collapse w-100">
-          <div className="navbar-search bg-white">
+         <div className="navbar-collapse w-100">
+          {/* <div className="navbar-search bg-white">
             <div className="flex align-center">
               <input
                 type="text"
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <i className="fa-solid fa-magnifying-glass"></i>
               </Link>
             </div>
-          </div>
+          </div> */}
 
           <ul className="navbar-nav flex align-center fs-12 fw-4 font-manrope">
             {
@@ -80,7 +80,7 @@ const Navbar = () => {
               ))
             }
           </ul>
-        </div> */}
+        </div> 
 
         <div className="navbar-cart flex align-center">
           <Link to="/cart" className="cart-btn">
