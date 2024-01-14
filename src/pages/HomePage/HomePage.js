@@ -18,7 +18,7 @@ const HomePage = () => {
 
   useEffect(() => {
     dispatch(fetchAsyncProducts(50));
-  }, []);
+  }, [dispatch]);
 
   const products = useSelector(getAllProducts);
   const productStatus = useSelector(getAllProductsStatus);
