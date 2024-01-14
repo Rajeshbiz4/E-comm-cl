@@ -44,12 +44,12 @@ const Navbar = () => {
               <i className="fa-solid fa-bag-shopping"></i>
             </span>
             <span className="navbar-brand-txt mx-2">
-              <span className="fw-7">Snap</span>Up.
+              <span className="fw-7">LOGO</span>
             </span>
           </Link>
         </div>
 
-        <div className="navbar-collapse w-100">
+        {/* <div className="navbar-collapse w-100">
           <div className="navbar-search bg-white">
             <div className="flex align-center">
               <input
@@ -80,7 +80,7 @@ const Navbar = () => {
               ))
             }
           </ul>
-        </div>
+        </div> */}
 
         <div className="navbar-cart flex align-center">
           <Link to="/cart" className="cart-btn">
