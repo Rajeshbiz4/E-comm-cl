@@ -30,11 +30,12 @@ function App() {
             {/* Single product route */}
             <Route path="/product/:id" element={<ProductSingle />} />
             {/* Category wise product listing route */}
-            <Route path="/categories/:category" element={<CategoryProduct />} />
+            <Route path="/category/:category" element={<CategoryProduct />} />
             {/* cart  */}
             <Route path="/cart" element={<Cart />} />
             {/* Searched Product */}
-            <Route path="/search/:searchTerm" element={<Search />} />
+            <Route path="/search/smartphones" element={<Search />} />
+            {/* login and Register */}
             <Route path="/login" element={<Login />}  />
           <Route path="/register" element={<Register />}  />
           </Routes>

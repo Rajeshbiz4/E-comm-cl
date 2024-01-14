@@ -14,6 +14,13 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 
 const Navbar = () => {
+
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   const dispatch = useDispatch();
   const categories = useSelector(getAllCategories);
   const carts = useSelector(getAllCarts);
@@ -88,6 +95,18 @@ const Navbar = () => {
             <div className="cart-items-value">{itemsCount}</div>
             <CartModal carts={carts} />
           </Link>
+
+          <Link to="/cart" className="cart-btn dropdown-menu" onClick={toggleDropdown}>
+          <i class="fa-solid fa-user"  ></i>
+          </Link>    
+
+          {isDropdownOpen && (
+        <ul className="dropdown-list" onClick={toggleDropdown}>
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      )}
         </div>
       </div>
     </nav>

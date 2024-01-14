@@ -9,7 +9,9 @@ import {
 import { STATUS } from "../../utlis/status";
 import Loader from "../../components/Loader/Loader";
 import ProductList from "./../../components/ProductList/ProductList";
+
 const CategoryProductPage = () => {
+  console.log("---0")
   const dispatch = useDispatch();
   const { category } = useParams();
   const categoryProducts = useSelector(getAllProductsByCategory);
